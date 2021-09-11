@@ -33,9 +33,12 @@
 		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "squizlabs/php_codesniffer": "^3.6.0"
 	},
-	"autoload": {
-		"classmap": [
-			"includes/classes/"
-		]
-	}
+    "autoload": {
+        "psr-4": {
+          "XforWC\\": "includes/"
+        },
+        "files": [
+            "includes/svx-settings/load.php"
+        ]
+      }
 }
